@@ -5,4 +5,17 @@
 		background-color:$mainPurple;
 		color:$mainGold;
 	}
+
+	&__description{
+		
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.7rem;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		@mixin mediumView{
+			width:507px;
+		}
+	}
 }

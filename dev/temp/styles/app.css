@@ -1030,8 +1030,12 @@ a{
 .generic_text p{
 		font-size: 1rem;
 		font-weight: 300;
-		line-height: 40px;
+		line-height: 2.5rem;
 	}
+
+.generic_text--tiny p{
+			line-height:1.5rem; 
+		}
 
 .skills__groupe{
 		position: relative;
@@ -1076,4 +1080,43 @@ a{
 .section--services{
 		background-color:#291b2c;
 		color:#cca969;
+	}
+
+.section__description{
+		
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.7rem;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+@media(min-width: 800px){
+
+.section__description{
+			width:507px
+	}
+	}
+
+.service-item{
+	padding-top: 1rem;
+}
+
+.service-item__icon{
+		display:block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+.service-item__title{
+		text-transform: uppercase;
+		font-family: 'Raleway';
+		font-size: 1.3rem;
+		font-weight: 500;
+		text-align: center;
+	}
+
+.service-item__description{
+		line-height: 1rem;
 	}
