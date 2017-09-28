@@ -1,0 +1,52 @@
+/* Gulp Sprites */
+		.icon{
+		background-image:url('../../assets/images/sprites/sprite-2e126964.svg');
+		}
+		.no-svg .icon{
+			background-image:url('../../assets/images/sprites/sprite-2e126964.png');
+		}
+	.icon--art{
+		width:50px;
+		height:50px;
+		background-position: 0 51.92307692307692%;
+	}
+	.icon--bug{
+		width:50px;
+		height:50px;
+		background-position: 29.239766081871345% 51.92307692307692%;
+	}
+	.icon--code{
+		width:50px;
+		height:50px;
+		background-position: 70.76023391812865% 0;
+	}
+	.icon--info{
+		width:50px;
+		height:50px;
+		background-position: 70.76023391812865% 48.07692307692308%;
+	}
+	.icon--logo{
+		width:121px;
+		height:54px;
+		background-position: 0 0;
+	}
+	.icon--message{
+		width:50px;
+		height:50px;
+		background-position: 0 100%;
+	}
+	.icon--star{
+		width:50px;
+		height:50px;
+		background-position: 29.239766081871345% 100%;
+	}
+	.icon--suit{
+		width:50px;
+		height:50px;
+		background-position: 58.47953216374269% 100%;
+	}
+	.icon--wordpress{
+		width:50px;
+		height:50px;
+		background-position: 100% 0;
+	}

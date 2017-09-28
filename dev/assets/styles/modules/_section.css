@@ -1,0 +1,8 @@
+.section{
+	padding:70px 0;
+
+	&--services{
+		background-color:$mainPurple;
+		color:$mainGold;
+	}
+}

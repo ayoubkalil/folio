@@ -1,0 +1,63 @@
+.nav{
+	display: none;
+	padding:24px 0;
+	@mixin mediumView{
+		display: block;
+	}
+	ul{
+		list-style: none;
+		margin:0;
+		padding:0;
+		@mixin clearfix;
+		li{
+			display: block;
+			padding:8px 15px;
+			text-align: center;
+			text-transform: uppercase;
+
+			@mixin mediumView{
+			text-transform: capitalize;
+			float:left;
+			padding:0 15px;
+			background-color:transparent;
+			}
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color:#fff;
+				font-weight: 400;
+				font-size: 1rem;
+				overflow: hidden;
+				padding-top:0;
+				&:hover::after{
+					opacity: 1;
+					transform: translateX(0);
+				}
+				&::after{
+					content:'';
+					display: block;
+					width:45%;
+					height: 3px;
+					background-color:#fff;
+					margin:0 auto;
+					border-radius: 10%;
+					opacity: 0;
+					transform: translateY(100%);
+					transition: all .3s ease-out;
+					@mixin mediumView{
+					transform: translateX(-100%);
+
+					}
+
+				}
+			}
+		}
+	}
+
+	&--pull-right{
+		@mixin mediumView{
+			float: right;
+		}
+	}
+
+}

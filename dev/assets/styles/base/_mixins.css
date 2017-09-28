@@ -1,0 +1,26 @@
+/* clear fix */
+@define-mixin clearfix{
+	&::after{
+		content:"";
+		clear:both;
+		display:table;
+	}
+}
+/* break-points */
+@define-mixin smallView{
+	@media (min-width: 530px){
+		@mixin-content;
+	}
+}
+
+@define-mixin mediumView{
+	@media(min-width: 800px){
+		@mixin-content;
+	}
+}
+
+@define-mixin largeView{
+	@media(min-width: 1010px){
+		@mixin-content;
+	}
+}

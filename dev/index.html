@@ -3,7 +3,7 @@
 <head>
   <title>Website Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
   <meta name="keywords" content="keywords">
   <meta name="description" content="description">
 
@@ -16,6 +16,248 @@
   <!-- endbuild -->
 </head>
 <body>
+
+  <!-- Begin Header Section -->
+  <header class="header">
+    <div class="wrapper">
+
+      <div class="header__logo-container">
+        <div class="header__logo icon icon--logo">Ayoub kalil</div>
+      </div>
+
+      <div class="header__sandwich-icon">
+          <div class="header__sandwich-icon__mid"></div>
+      </div>
+
+      <nav class="nav nav--pull-right">
+        <ul>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li><a href="#services" id="services-link">Services</a></li>
+          <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+          <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+        </ul>
+      </nav>
+      
+
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+  <!-- Begin of Hero block -->
+  <div class="hero">
+    
+    <picture>
+        <source  srcset="assets/images/hero.jpg 640w" media="(min-width: 640px)"/> 
+        <img class="hero__image" src="assets/images/hero--small.jpg" alt="beatifull view of nature">
+    </picture>
+    
+    <div class="hero__layer"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">i'm <strong>Ayoub</strong></h1>
+      <a class="btn btn--transparent" href="#portfolio">My portfolio</a>
+      <a class="btn" href="#">Get in touch</a>
+    </div>
+  </div>
+  <!-- End of Hero block -->
+
+  <!-- Begin About Section -->
+  <div id="about" class="section">
+    <div class="wrapper">
+
+      <h2 class="headline headline--double-border-b">
+        <span class="headline__icon icon icon--info"></span>
+        About <strong>Me</strong></h2>
+      
+      <div class="grid grid--gutters-large">
+        <div class="grid__medium-6 generic_text">
+          <h4>Hello , i'm <strong> Ayoub Kalil</strong></h4>
+          <p>
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+          </p>
+        </div>
+        
+        <div class="grid__medium-6">
+          <div class="skills">
+
+           <div class="skills__groupe">
+              <h3 class="skills__title">HTML & CSS</h3>
+              <div class="skills__container">
+                  <h4 class="skills__inner">html+css</h4>
+              </div>
+              <div class="skills__percentage">85%</div>
+           </div>
+
+           <div class="skills__groupe">
+              <h3 class="skills__title">Javascript</h3>
+              <div class="skills__container">
+                  <h4 class="skills__inner">javascript</h4>
+              </div>
+              <div class="skills__percentage">85%</div>
+           </div>
+
+           <div class="skills__groupe">
+              <h3 class="skills__title">Design</h3>
+              <div class="skills__container">
+                  <h4 class="skills__inner">design</h4>
+              </div>
+              <div class="skills__percentage">85%</div>
+           </div>
+
+           <div class="skills__groupe">
+              <h3 class="skills__title">Wordpress</h3>
+              <div class="skills__container">
+                  <h4 class="skills__inner">wordpreess</h4>
+              </div>
+              <div class="skills__percentage">85%</div>
+           </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- End grid -->
+    </div>
+  </div>
+  <!-- End About Section -->
+
+  <!-- Begin Services Section -->
+  <div id="services" class="section section--services">
+    <div class="wrapper">
+          <h2 class="headline headline--gold headline--double-border-b headline--double-border-b--gold">
+            <span class="headline__icon icon icon--star"></span>
+            <strong>My</strong>Services
+          </h2>
+          <p class="section__description">On sait depuis longtemps que travailler avec du texte lisible et contenant 
+      du sens est source de distractions, et empêche de se concentrer</p>
+
+          <div class="services__item">
+            <span class="services__item__icon icon--code"></span>
+            <h3 class="services__item__title">Web development</h3>
+            <p class="services__item__description">On sait depuis longtemps que travailler avec 
+            du texte lisible et contenant du sens est source 
+            de distractions, et empêche de se concentrer</p>
+          </div>
+
+          <div class="services__item">
+            <span class="services__item__icon icon--brush"></span>
+            <h3 class="services__item__title">Web Design</h3>
+            <p class="services__item__description">On sait depuis longtemps que travailler avec 
+            du texte lisible et contenant du sens est source 
+            de distractions, et empêche de se concentrer</p>
+          </div>
+
+          <div class="services__item">
+            <span class="services__item__icon icon--brush"></span>
+            <h3 class="services__item__title">Fixing Bugs</h3>
+            <p class="services__item__description">On sait depuis longtemps que travailler avec 
+            du texte lisible et contenant du sens est source 
+            de distractions, et empêche de se concentrer</p>
+          </div>
+
+          <div class="services__item">
+            <span class="services__item__icon icon--brush"></span>
+            <h3 class="services__item__title">CMS Development</h3>
+            <p class="services__item__description">On sait depuis longtemps que travailler avec 
+            du texte lisible et contenant du sens est source 
+            de distractions, et empêche de se concentrer</p>
+          </div>
+
+    </div>
+  </div>
+  <!-- End Services Section -->
+
+  <!-- Begin Portfolio Section -->
+  <div id="portfolio" class="section">
+    <h2 class="section__title"><strong>My</strong>Portfolio</h2>
+    <p class="section__description">On sait depuis longtemps que travailler avec du texte lisible et contenant 
+    du sens est source de distractions, et empêche de se concentrer</p>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_01.jpg">
+    </div>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_02.jpg">
+    </div>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_01.jpg">
+    </div>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_02.jpg">
+    </div>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_01.jpg">
+    </div>
+
+    <div class="browser">
+      <div class="browser__top-bar">
+          <div class="dots"></div>
+      </div>
+      <img class="browser__display" src="assets/images/portfolio_02.jpg">
+    </div>
+
+
+  </div>
+  <!-- End Portfolio Section -->
+
+  <!-- Begin Testimonials Section -->
+  <div id="testimonials" class="section">
+    <h2 class="section__title">Testimonials</h2>
+    <p class="section__description">On sait depuis longtemps que travailler avec du texte lisible et contenant 
+    du sens est source de distractions, et empêche de se concentrer</p>
+
+    <div class="testimonial">
+      <img class="testimonial__picture" src="assets/images/testimonial-zukerberg.jpg" alt="Mark Zukerberg" />
+      <h3 class="testimonial__author">Mark Zukerberg</h3>
+      <h4 class="testimonial__label">Facebook CO</h4>
+      <p>
+        “Very knowledgeable and very easy to communicate with, I was amazed by his excellent customer service skills, always interested in your needs and how to fulfill them, great to work with!”
+      </p>
+    </div>
+
+    <div class="testimonial">
+      <img class="testimonial__picture" src="assets/images/testimonial-stevejobs.jpg" alt="Steve Jobs" />
+      <h3 class="testimonial__author">Steve Jobs</h3>
+      <h4 class="testimonial__label">Apple CO</h4>
+      <p>
+        “Excellent communication and timing on delivery! I highly recommend working with him, very responsible and knowledgeable person. 200% recommended! I will definetely keep working with him.”
+      </p>
+    </div>
+
+    <div class="testimonial">
+      <img class="testimonial__picture" src="assets/images/testimonial-billgates.jpg" alt="Bill Gates" />
+      <h3 class="testimonial__author">Bill Gates</h3>
+      <h4 class="testimonial__label">Microsoft CO</h4>
+      <p>
+        “very reliable and trust worthy service provider! not only good at his work but awesome as a person too...dependable and you can be free of worries. will be using his services and will be recommending him to my friends. stay awesome! :)) “
+      </p>
+    </div>
+
+    <footer>
+      <p>Copyright © 2017  AYOUB KALIL ,  All rights reserved.</p>
+    </footer>
+
+  </div>
+  <!-- End Testimonials Section -->
+
 
 
   <!-- build:js assets/js/app.js -->

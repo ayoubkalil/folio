@@ -1,0 +1,27 @@
+.grid{
+	overflow: hidden;
+	@mixin mediumView{
+	&--gutters-large{
+		margin-right:-100px;
+	}
+	&--gutters-large > div{
+		padding-right:100px; 
+	}
+	&__medium-6{
+		width:50%;
+		float:left;
+	}
+	}
+	@mixin largeView{
+	&--gutters-large{
+		margin-right:-135px;
+	}
+	&--gutters-large > div{
+		padding-right:135px; 
+	}
+	
+
+
+	}
+
+}

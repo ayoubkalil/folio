@@ -1,0 +1,33 @@
+.skills{
+	&__groupe{
+		position: relative;
+	}
+	&__container{
+		display: block;
+		width:100%;
+		height: 10px;
+		background-color:$mainGold;
+		border-radius: 3px;
+		margin-top: 10px;
+
+	}
+	&__inner{
+		display: block;
+		background-color: #6b5938;
+		width: 85%;
+		height: 10px;
+		text-indent: -9999px;
+		border-radius: 3px;
+
+	}
+	&__title{
+		text-transform: uppercase;
+	}
+	&__percentage{
+		position: absolute;
+		top:8px;
+		right: 40px;
+		font-weight: 500;
+
+	}
+}

@@ -1,0 +1,67 @@
+.headline{
+	font-size: 2.1875rem;
+	color:$mainPurple;
+	font-family: "Raleway";
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top:0;
+	@mixin mediumView{
+		margin-bottom: 80px;
+	}
+	&--double-border-b{
+		position: relative;
+		&::before{
+			position: absolute;
+			content:'';
+			display: block;
+			width: 100px;
+			bottom: -8px;
+			left:50%;
+			transform: translateX(-50%);
+			height: 2px;
+			background-color:$mainPurple;
+			@mixin smallView{
+			transform: translateX(-20%);
+			}
+		}
+		&::after{
+			position: absolute;
+			content:'';
+			display: block;
+			width: 150px;
+			bottom: -12px;
+			left:50%;
+			height: 2px;
+			background-color:$mainPurple;
+			transform: translateX(-50%);
+			@mixin smallView{
+				transform: translateX(-30%);
+			}
+		}
+		&--gold:before , &--gold:after{
+			background-color:$mainGold;
+		}
+	}
+
+	&--gold{
+		color:$mainGold;
+	}
+	strong{
+		font-weight: 700;
+	}
+	&__icon{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:.6rem;
+		@mixin smallView{
+			position: relative;
+			top:10px;
+			margin-right: .5rem;
+			margin-left:0;
+			display: inline-block;
+			margin-bottom:0;
+		}
+	}
+}
