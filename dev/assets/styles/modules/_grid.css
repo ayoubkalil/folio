@@ -1,4 +1,5 @@
 .grid{
+	@mixin clearfix;
 	overflow: hidden;
 	@mixin mediumView{
 	&--gutters-large{
@@ -7,21 +8,56 @@
 	&--gutters-large > div{
 		padding-right:100px; 
 	}
+
 	&__medium-6{
 		width:50%;
 		float:left;
 	}
+
+	&__medium-4{
+		width:33.33%;
+		float:left;
+	}
+
 	}
 	@mixin largeView{
+	
+
 	&--gutters-large{
 		margin-right:-135px;
 	}
 	&--gutters-large > div{
 		padding-right:135px; 
 	}
+	&__large-4{
+		width:33.33% !important;
+		float:left;
+	}
 	
+	}
 
-
+	@mixin smallView{
+		&__small-6{
+			width:50%;
+			float:left;
+		}
+		&--gutters-small{
+			margin-right:-8px;
+		}
+		&--gutters-small > div{
+			padding-right:8px; 
+		}
+		
+	}
+	@mixin mediumView{
+		&--gutters-small{
+			margin-right:-70px;
+		}
+		&--gutters-small > div{
+			padding-right:70px; 
+		}
+		
+		
 	}
 
 }

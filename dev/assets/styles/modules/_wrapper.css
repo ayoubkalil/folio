@@ -5,5 +5,16 @@
 	max-width: 1236px;
 	margin-left:auto;
 	margin-right:auto;
-
+	&--no-padding-at-smallView{
+		padding-left: 0;
+		padding-right: 0;
+		@mixin smallView{
+			padding-left:8px;
+			padding-right:8px;
+		}
+		@mixin mediumView{
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
 }

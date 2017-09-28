@@ -5,7 +5,10 @@
 		background-color:$mainPurple;
 		color:$mainGold;
 	}
-
+	&--portfolio{
+		background-color:$mainGold;
+		color:$mainPurple;
+	}
 	&__description{
 		
 		font-weight: 300;
