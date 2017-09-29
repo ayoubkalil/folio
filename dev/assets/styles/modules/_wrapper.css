@@ -17,4 +17,8 @@
 			padding-right:18px;
 		}
 	}
+	&--bring-to-top{
+		position: relative;
+		z-index: 3;
+	}
 }

@@ -1,6 +1,9 @@
 .grid{
 	@mixin clearfix;
 	overflow: hidden;
+	&--padding-top{
+		padding-top: 80px;
+	}
 	@mixin mediumView{
 	&--gutters-large{
 		margin-right:-100px;
@@ -58,6 +61,16 @@
 		}
 		
 		
+	}
+
+	&--equal-hi{
+		@mixin largeView{
+			display: flex;
+		}
+		& > div{
+			float:none;
+			display: flex;
+		}
 	}
 
 }

@@ -42,8 +42,13 @@
 		&--gold:before , &--gold:after{
 			background-color:$mainGold;
 		}
+		&--white:before , &--white:after{
+			background-color:#fff;
+		}
 	}
-
+	&--white{
+		color:#fff;
+	}
 	&--gold{
 		color:$mainGold;
 	}

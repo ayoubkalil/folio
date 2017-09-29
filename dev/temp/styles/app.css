@@ -851,6 +851,11 @@ a{
 	}
 	}
 
+.wrapper--bring-to-top{
+		position: relative;
+		z-index: 3;
+	}
+
 /* Gulp Sprites */
 
 .icon{
@@ -982,6 +987,14 @@ a{
 			background-color:#cca969;
 		}
 
+.headline--double-border-b--white:before, .headline--double-border-b--white:after{
+			background-color:#fff;
+		}
+
+.headline--white{
+		color:#fff;
+	}
+
 .headline--gold{
 		color:#cca969;
 	}
@@ -1018,6 +1031,10 @@ a{
 		content:"";
 		clear:both;
 		display:table;
+	}
+
+.grid--padding-top{
+		padding-top: 80px;
 	}
 
 @media(min-width: 800px){
@@ -1075,6 +1092,22 @@ a{
 			padding-right:70px; 
 		}
 	}
+
+@media(min-width: 1010px){
+
+.grid--equal-hi{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex
+	}
+	}
+
+.grid--equal-hi > div{
+			float:none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
 
 .generic_text h4{
 		font-family: 'Raleway';
@@ -1145,6 +1178,15 @@ a{
 .section--portfolio{
 		background-color:#cca969;
 		color:#291b2c;
+	}
+
+.section--testimonial{
+		background-color:#202020;
+		background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+		background-size: cover;
+		position: relative;
+		color:#fff;
+
 	}
 
 .section__description{
@@ -1280,3 +1322,62 @@ a{
 				margin-top: 1em;
 				color:#cca969;
 			}
+
+.testimonial{
+	background-color:rgba(255,255,255,.85);
+	padding:0 1.8125rem 1px 18px;
+	margin-bottom:98px; 
+	position: relative;
+
+}
+
+@media(min-width: 1010px){
+
+.testimonial{
+	padding:0 1.8125rem 1px 1.8125rem;
+	margin-bottom:0
+
+}
+	}
+
+.testimonial--last{
+		margin-bottom:0;
+	}
+
+.testimonial__picture{
+		border-radius:8px;
+		overflow: hidden;
+		width:100px;
+		height: 100px;
+		border:6px solid rgba(255,255,255,.85);
+		margin-right: auto;
+		margin-left: auto;
+		position:relative;
+		top:-50px;
+		margin-bottom:-50px;		
+
+	}
+
+.testimonial__author{
+		color:#291b2c;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 500;
+		margin:0;
+		text-transform: uppercase;
+		position: absolute;
+		left: 140px;
+		top:8px;
+	}
+
+.testimonial__label{
+		color:#444;
+		text-align: center;
+		font-weight:500;
+		font-size: 1rem;   
+		margin:.25rem 0 1rem 0;
+	}
+
+.testimonial__description{
+		color:#333;
+	}
