@@ -1,0 +1,10 @@
+.footer{
+	background-color: $mainPurple;
+	color:$mainGold;
+	text-align: center;
+	border-top:11px solid $mainGold;
+	p{
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+}

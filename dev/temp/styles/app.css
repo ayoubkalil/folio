@@ -1381,3 +1381,15 @@ a{
 .testimonial__description{
 		color:#333;
 	}
+
+.footer{
+	background-color: #291b2c;
+	color:#cca969;
+	text-align: center;
+	border-top:11px solid #cca969;
+}
+
+.footer p{
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
