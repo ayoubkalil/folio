@@ -1,15 +1,24 @@
 .header{
 	position: absolute;
-	z-index: 4;
+	z-index: 3;
 	width: 100%;
-	
+	transform: all .3s ease-out;
 	@mixin mediumView{
-	position: absolute;
 	background-color: transparent;
+	position: fixed;
+	&--dark{
+		background-color:rgba($mainPurple,.98);
+		z-index: 10;
 	}
-	&--is-expended{
-		display: block;
+
+	}
+	&--is-expanded{
+		z-index: 4;
 		background-color: rgba($mainPurple,.85);
+			@mixin mediumView{
+
+			background-color: transparent;
+			}
 	}
 
 	&__logo-container{
@@ -41,6 +50,7 @@
 		top:15px;
 		right:15px;
 		z-index: 20;
+		cursor: pointer;
 
 		@mixin mediumView{
 			display: none;
@@ -98,7 +108,7 @@
 		&::after {
 			transform:rotate(-45deg) scaleX(1.25) translateY(1px);
 		}
-		.site-header__sandwich-icon__mid{
+		.header__sandwich-icon__mid{
 			opacity: 0;
 			transform:scaleX(0);
 		}

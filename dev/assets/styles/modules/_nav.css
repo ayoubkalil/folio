@@ -1,8 +1,15 @@
 .nav{
-	display: none;
+	opacity: 0;
 	padding:24px 0;
+	transition: transform .3s ease-out;
+	transform: scale(1.2);
+	position: relative;
+	z-index:-1;
+
 	@mixin mediumView{
-		display: block;
+		transform: scale(1);
+		opacity:1;
+		z-index: 20;
 	}
 	ul{
 		list-style: none;
@@ -29,6 +36,14 @@
 				font-size: 1rem;
 				overflow: hidden;
 				padding-top:0;
+				&.is-current-link{
+					color:$mainGold;
+					&::after{
+						background-color: $mainGold;
+						opacity: 1;
+					transform: translateX(0);
+					}
+				}
 				&:hover::after{
 					opacity: 1;
 					transform: translateX(0);
@@ -58,6 +73,11 @@
 		@mixin mediumView{
 			float: right;
 		}
+	}
+	&--is-visible{
+	transform: scale(1);
+	opacity: 1;
+	z-index: 5;
 	}
 
 }

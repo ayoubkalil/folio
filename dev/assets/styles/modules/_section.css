@@ -11,13 +11,19 @@
 	}
 	&--testimonial{
 		background-color:#202020;
-		background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
-		background-size: cover;
+		
 		position: relative;
 		color:#fff;
+		&.lazyloaded{
+		background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+		background-size: cover;
+		}
 
 	}
-
+	&__folioFillter{
+		text-align: center;
+	    padding: 0 0 33px 0;
+	}
 	&__description{
 		
 		font-weight: 300;

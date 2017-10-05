@@ -31,4 +31,13 @@
 		
 		}
 	}
+	&--filter{
+		text-align: center;
+		padding: 5px;
+		display: inline;
+		&:hover{
+			background: $mainPurple;
+			color:$mainGold;
+		}
+	}
 }

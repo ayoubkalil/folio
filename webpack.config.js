@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
 	entry : {
-		App : "./dev/assets/scripts/dev.js",
+		App : "./dev/assets/scripts/app.js",
 		Preloader: "./dev/assets/scripts/preloader.js"
 		},
 	output : {

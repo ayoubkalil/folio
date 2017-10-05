@@ -6,6 +6,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	margin-top:0;
+	padding-top:28px;
 	@mixin mediumView{
 		margin-bottom: 80px;
 	}

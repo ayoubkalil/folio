@@ -14,7 +14,7 @@
 	&__inner{
 		display: block;
 		background-color: #6b5938;
-		width: 85%;
+		width:1px;
 		height: 10px;
 		text-indent: -9999px;
 		border-radius: 3px;

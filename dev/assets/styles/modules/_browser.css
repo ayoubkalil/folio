@@ -75,5 +75,11 @@
 				margin-top: 1em;
 				color:$mainGold;
 			}
+			&__icon{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+			}
 	}
 }

@@ -42,12 +42,34 @@
 
 		}
 		strong{
-			display: block;
 			@mixin smallView{
 				display: inline;
 			}
 			font-weight: 500;
 			text-transform: uppercase;
+		}&::after {
+			content: '|';
+			display: inline;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
 		}
+
 	}
 }
+/*Custom cursor animation*/
+		@keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
