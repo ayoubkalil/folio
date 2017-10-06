@@ -1,0 +1,39 @@
+.project{
+	&__navigation{
+		text-align: center;
+	}
+	&__title{
+		color:$mainGold;
+		font-size: 1.9rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__description{
+		strong{
+			color:$mainPurple;
+			text-transform: capitalize;
+		}
+	}
+	&__category{
+		strong{
+			color:$mainPurple;
+			text-transform: capitalize;
+		}
+	}
+	&__demo{
+		strong{
+			color:$mainPurple;
+			text-transform: capitalize;
+		}
+	}
+	&__screenshot{
+		overflow-x: auto;
+		width:100%;
+		max-height: 300px;
+		margin-top: 39px;
+		@mixin mediumView{
+			max-height: 520px;
+		}
+	}
+}

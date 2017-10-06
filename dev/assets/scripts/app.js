@@ -34,7 +34,7 @@ let testimonials = new ROS(".testimonial","80%");
 
 // sticky header 
 
-// let fh = new FH();
+let fh = new FH();
 
 
 

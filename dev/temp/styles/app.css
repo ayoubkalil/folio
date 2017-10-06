@@ -459,6 +459,10 @@ body{
 	color:#333;
 }
 
+body.no-overflow{
+		overflow: hidden;
+	}
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -597,6 +601,24 @@ a{
 }
 	}
 
+.btn--primary{
+		background-color:#291b2c;
+		color:#cca969;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+.btn--primary:hover{
+			background-color: rgba(41,27,44,.95);
+		}
+
+@media (min-width: 530px){
+
+.btn--primary{
+			margin-bottom: 0
+	}
+	}
+
 .btn--transparent{
 		background-color: transparent;
 		border-color:#fff;
@@ -619,6 +641,12 @@ a{
 			background: #291b2c;
 			color:#cca969;
 		}
+
+.btn--small{
+		display: inline-block;
+		padding: 8px 0;
+		width: 123px;
+	}
 
 .nav{
 	opacity: 0;
@@ -1379,7 +1407,7 @@ a{
 
 .browser{
 		width:100%;
-		height: 240px
+		height: 277px
 }
 	}
 
@@ -1579,7 +1607,7 @@ transition: margin .3s cubic-bezier(0,0,.58,1);
 .modal{
 	position:fixed;
 	z-index: 20;
-	background-color:rgba(255,255,255,.94);
+	background-color:rgba(255,255,255,.99);
 	top:0;
 	bottom:0;
 	left:0;
@@ -1590,6 +1618,7 @@ transition: margin .3s cubic-bezier(0,0,.58,1);
 	transition:all .3s ease-out;
 	-webkit-transform:scale(1.2);
 	        transform:scale(1.2);
+	overflow-x: auto;
 
 }
 
@@ -1603,16 +1632,8 @@ transition: margin .3s cubic-bezier(0,0,.58,1);
 .modal__inner-wrapper{
 		position:absolute;
 		width: 100%;
-		top:50%;
-		-webkit-transform:translateY(-50%);
-		        transform:translateY(-50%);
-	}
-
-.modal__description{
-		text-align: center;
-		font-size: 1.3rem;
-		font-weight: 300;
-		line-height: 1.65rem;
+		
+		padding-top:30px;
 	}
 
 .modal__close{
@@ -1632,3 +1653,44 @@ transition: margin .3s cubic-bezier(0,0,.58,1);
 			color:#cca969;
 			cursor: pointer;
 		}
+
+.project__navigation{
+		text-align: center;
+	}
+
+.project__title{
+		color:#cca969;
+		font-size: 1.9rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+.project__description strong{
+			color:#291b2c;
+			text-transform: capitalize;
+		}
+
+.project__category strong{
+			color:#291b2c;
+			text-transform: capitalize;
+		}
+
+.project__demo strong{
+			color:#291b2c;
+			text-transform: capitalize;
+		}
+
+.project__screenshot{
+		overflow-x: auto;
+		width:100%;
+		max-height: 300px;
+		margin-top: 39px;
+	}
+
+@media(min-width: 800px){
+
+.project__screenshot{
+			max-height: 520px
+	}
+	}

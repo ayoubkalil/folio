@@ -1,7 +1,7 @@
 .modal{
 	position:fixed;
 	z-index: 20;
-	background-color:rgba(255,255,255,.94);
+	background-color:rgba(255,255,255,.99);
 	top:0;
 	bottom:0;
 	left:0;
@@ -10,6 +10,7 @@
 	visibility: hidden;
 	transition:all .3s ease-out;
 	transform:scale(1.2);
+	overflow-x: auto;
 	&--is-visible{
 		opacity: 1;
 		visibility: visible;
@@ -18,14 +19,8 @@
 	&__inner-wrapper{
 		position:absolute;
 		width: 100%;
-		top:50%;
-		transform:translateY(-50%);
-	}
-	&__description{
-		text-align: center;
-		font-size: 1.3rem;
-		font-weight: 300;
-		line-height: 1.65rem;
+		
+		padding-top:30px;
 	}
 	&__close{
 		position:absolute;

@@ -11151,8 +11151,7 @@ var testimonials = new _RevealOnScroll2.default(".testimonial", "80%");
 
 // sticky header 
 
-// let fh = new FH();
-
+var fh = new _FixedHeader2.default();
 
 // portfolio gallery
 var folioGallery = new _PortfolioGallery2.default(projects, '#portfolio .grid', '.section__folioFillter');
@@ -12982,6 +12981,15 @@ var PortfolioGallery = function () {
 		this.categoryDiv = (0, _jquery2.default)(categoryHolder);
 		this.modalClose = (0, _jquery2.default)('.modal__close');
 		this.modal = (0, _jquery2.default)('.modal');
+
+		this.projectTitle = (0, _jquery2.default)('.project__title');
+		this.projectDescription = (0, _jquery2.default)('.project__description');
+		this.projectCategory = (0, _jquery2.default)('.project__category');
+		this.projectDemo = (0, _jquery2.default)('.project__demo');
+		this.projectScreenshot = (0, _jquery2.default)('.project__screenshot');
+		this.prev = (0, _jquery2.default)('.project__prev');
+		this.next = (0, _jquery2.default)('.project__next');
+		this.currentProject = 0;
 		this.render();
 		this.showInfo = (0, _jquery2.default)('.show-info');
 		this.events();
@@ -13001,18 +13009,50 @@ var PortfolioGallery = function () {
 		value: function events() {
 			var _this = this;
 			this.showInfo.click(function () {
-				_this.renderModal((0, _jquery2.default)(this).parents('div.filter').attr('id'));
+				(0, _jquery2.default)('body').addClass('no-overflow');
+				_this.currentProject = parseInt((0, _jquery2.default)(this).parents('div.filter').attr('id'));
+				_this.renderModal();
 				_this.modal.addClass('modal--is-visible');
 				return false;
 			});
 
 			this.modalClose.click(function () {
+				(0, _jquery2.default)('body').removeClass('no-overflow');
 				_this.modal.removeClass('modal--is-visible');
+			});
+			this.prev.click(function () {
+				if (_this.currentProject > 0) {
+					_this.currentProject -= 1;
+					_this.renderModal();
+				}
+				return false;
+			});
+			this.next.click(function () {
+				if (_this.currentProject < _this.projects.length - 1) {
+					_this.currentProject += 1;
+					_this.renderModal();
+				}
+				return false;
 			});
 		}
 	}, {
 		key: 'renderModal',
-		value: function renderModal(projectId) {}
+		value: function renderModal() {
+			this.projectTitle.html('');
+			this.projectDescription.html('');
+			this.projectCategory.html('');
+			this.projectDemo.html('');
+			this.projectScreenshot.html('');
+			var demo = this.projects[this.currentProject].liveLink || 'Unavailable';
+			if (demo !== 'Unavailable') {
+				demo = "<a href='" + demo + "'>Here<a/>";
+			}
+			this.projectTitle.append(this.projects[this.currentProject].name);
+			this.projectDescription.append("<strong>Description : </strong> " + this.projects[this.currentProject].description);
+			this.projectCategory.append("<strong>category : </strong>#" + this.projects[this.currentProject].category);
+			this.projectDemo.append("<strong>Live Demo : </strong> " + demo);
+			this.projectScreenshot.append("<img src='" + this.projects[this.currentProject].image + "' alt='" + this.projects[this.currentProject].name + "'>");
+		}
 	}]);
 
 	return PortfolioGallery;

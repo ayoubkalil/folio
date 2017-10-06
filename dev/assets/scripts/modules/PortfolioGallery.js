@@ -6,6 +6,15 @@ class PortfolioGallery{
 		this.categoryDiv = $(categoryHolder);
 		this.modalClose = $('.modal__close');
 		this.modal = $('.modal');
+
+		this.projectTitle = $('.project__title');
+		this.projectDescription = $('.project__description');
+		this.projectCategory = $('.project__category');
+		this.projectDemo = $('.project__demo');
+		this.projectScreenshot = $('.project__screenshot');
+		this.prev = $('.project__prev');
+		this.next = $('.project__next');
+		this.currentProject = 0;
 		this.render();
 		this.showInfo = $('.show-info');
 		this.events();
@@ -31,17 +40,47 @@ class PortfolioGallery{
 	events(){
 		var _this = this;
 		this.showInfo.click(function(){
-			_this.renderModal($(this).parents('div.filter').attr('id'));
+			$('body').addClass('no-overflow');
+			_this.currentProject = parseInt($(this).parents('div.filter').attr('id'));
+			_this.renderModal();
 			_this.modal.addClass('modal--is-visible');
 			return false;
 		});
 
 		this.modalClose.click(function(){
+			$('body').removeClass('no-overflow');
 			_this.modal.removeClass('modal--is-visible');
 		});
+		this.prev.click(function(){
+			if(_this.currentProject > 0){
+			_this.currentProject -= 1;
+			_this.renderModal();
+			}
+			return false;
+		});
+		this.next.click(function(){
+			if(_this.currentProject < _this.projects.length-1){
+			_this.currentProject += 1;
+			_this.renderModal();
+			}
+			return false;
+		});
 	}
-	renderModal(projectId){
-		
+	renderModal(){
+		this.projectTitle.html('');
+		this.projectDescription.html('');
+		this.projectCategory.html('');
+		this.projectDemo.html('');
+		this.projectScreenshot.html('');
+		let demo = this.projects[this.currentProject].liveLink || 'Unavailable';
+		if(demo !== 'Unavailable'){
+			demo = "<a href='" + demo + "'>Here<a/>";
+		}
+		this.projectTitle.append(this.projects[this.currentProject].name);
+		this.projectDescription.append("<strong>Description : </strong> " +this.projects[this.currentProject].description);
+		this.projectCategory.append("<strong>category : </strong>#" + this.projects[this.currentProject].category);
+		this.projectDemo.append("<strong>Live Demo : </strong> " + demo);
+		this.projectScreenshot.append("<img src='"+ this.projects[this.currentProject].image + "' alt='"+ this.projects[this.currentProject].name +"'>");
 	}
 }
 
