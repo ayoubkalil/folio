@@ -11151,14 +11151,14 @@ var testimonials = new _RevealOnScroll2.default(".testimonial", "80%");
 
 // sticky header 
 
-var fh = new _FixedHeader2.default();
+// let fh = new FH();
 
+
+// portfolio gallery
+var folioGallery = new _PortfolioGallery2.default(projects, '#portfolio .grid', '.section__folioFillter');
 // portfolio filter
 
 var filter = new _PortfolioFilter2.default();
-
-// portfolio gallery
-var folioGallery = new _PortfolioGallery2.default(projects);
 
 /***/ }),
 /* 3 */
@@ -12974,24 +12974,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PortfolioGallery = function () {
-	function PortfolioGallery(data) {
+	function PortfolioGallery(data, holder, categoryHolder) {
 		_classCallCheck(this, PortfolioGallery);
 
 		this.projects = data;
+		this.holderDiv = (0, _jquery2.default)(holder);
+		this.categoryDiv = (0, _jquery2.default)(categoryHolder);
+		this.modalClose = (0, _jquery2.default)('.modal__close');
+		this.modal = (0, _jquery2.default)('.modal');
 		this.render();
+		this.showInfo = (0, _jquery2.default)('.show-info');
+		this.events();
 	}
 
 	_createClass(PortfolioGallery, [{
-		key: "render",
+		key: 'render',
 		value: function render() {
 			for (var i = 0; i < this.projects.length; i++) {
 				var project = this.projects[i];
-				console.log(project.name);
+				var projectDiv = '<div id=\'' + i + '\' class=\'grid__large-4 grid__small-6 filter ' + project.category + '\'>\n\t\t\t\t\t        <div class=\'browser\'>\n\t\t\t\t\t          <div class=\'browser__top-bar\'>\n\t\t\t\t\t              <div class=\'dots\'></div>\n\t\t\t\t\t          </div>\n\t\t\t\t\t          <div class=\'browser__info\'>\n\t\t\t\t\t              <h4>' + project.name + '</h4>\n\t\t\t\t\t              <a class="show-info" href=\'#\'>Read More <span class=\'browser__info__icon icon icon--more\'></span></a>\n\t\t\t\t\t          </div>\n\t\t\t\t\t          <img class=\'browser__display lazyload\' alt=\'project name\' data-src=\'' + project.thumbnail + '\'>\n\t\t\t\t\t        </div>\n\t\t\t\t\t     </div>';
+				this.holderDiv.append(projectDiv);
 			}
 		}
 	}, {
-		key: "events",
-		value: function events() {}
+		key: 'events',
+		value: function events() {
+			var _this = this;
+			this.showInfo.click(function () {
+				_this.renderModal((0, _jquery2.default)(this).parents('div.filter').attr('id'));
+				_this.modal.addClass('modal--is-visible');
+				return false;
+			});
+
+			this.modalClose.click(function () {
+				_this.modal.removeClass('modal--is-visible');
+			});
+		}
+	}, {
+		key: 'renderModal',
+		value: function renderModal(projectId) {}
 	}]);
 
 	return PortfolioGallery;

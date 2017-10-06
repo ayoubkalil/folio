@@ -12,7 +12,7 @@ var projects =[{
       description:"",
       image:"",
       liveLink:"",
-      category:"webdesign"
+      category:"logo"
    },
    {  
       name:"Name3",

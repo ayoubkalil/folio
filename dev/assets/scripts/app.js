@@ -34,11 +34,12 @@ let testimonials = new ROS(".testimonial","80%");
 
 // sticky header 
 
-let fh = new FH();
+// let fh = new FH();
 
+
+
+// portfolio gallery
+let folioGallery = new portfolioGallery(projects,'#portfolio .grid' , '.section__folioFillter');
 // portfolio filter
 
 let filter = new portfoliofilter();
-
-// portfolio gallery
-let folioGallery = new portfolioGallery(projects);
