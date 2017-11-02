@@ -1,15 +1,99 @@
+@keyframes blinkit{
+    0%   {    transform: translateY(0);}
+    100% {    transform: translateY(15px);}
+   
+}
 .get-in-touch{
-	background-color: #fff;
+	
+	background-color: $mainGold;
+	color:$mainPurple;
 	width:100%;
-	height: 100%;
+	min-height: 900px;
 	position: absolute;
-	top:-100%;
+	top:-900px;
 	left:0;
 	transition: top .3s cubic-bezier(0,0,.58,1);
+	text-align: center;
+	@mixin mediumView{
+		min-height: 100%;
+		top:-100%;
+		text-align: left;
+	}
+	#hideMe{
+		display:block;
+		margin:10px auto;
+		width: 34px;
+		text-decoration: none;
+		line-height: 0;
+		animation-name: blinkit;
+    	animation-duration: 1s;
+    	animation-iteration-count:infinite;
+    	animation-direction: alternate;
+		span{
+			display:block;
+		}
+	}
+	&__inner-wrapper{
+		position:absolute;
+		width: 100%;
+		top:50%;
+		transform:translateY(-50%);
+	}
+	
 
 	&--is-visible{
 	top:0;
 	}
+	&__info{
+		@mixin mediumView{
+			padding-top:50px;
+		}
+	}
+	&__social{
+		a{
+			background:$mainPurple;
+		    display: inline-block;
+		    width: 48px;
+		    height: 48px;
+		    border-radius: 50%;
+		}
+		span.icon{
+			display: block;
+			transform: scale(0.5);
+			height: 53px;
+			margin-left: -4px;
+			margin-top: -3px;
+		}
+	}
+	form {
+	max-width: 600px;
+	text-align: left;
+	margin: 20px auto;
+		label{
+		text-align: center;
+		display: block;
+		padding-top: 12px;
+		text-transform: capitalize;
+		font-weight: 500;
+		}
+		input, textarea {
+		 border:0; outline:0;
+		 padding: 1em;
+		 border-radius:8px;
+		 display: block;
+		 width: 100%;
+		 margin-top: 1em;
+		 font-family: 'Merriweather', sans-serif;
+		 box-shadow:0 1px 1px rgba(black, 0.1);
+		 resize: none;
+
+			&:focus {
+			  
+			}
+
+		}
+	}
+	  
 
 }
 .container{

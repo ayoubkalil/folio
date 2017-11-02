@@ -1,4 +1,5 @@
 .grid{
+
 	@mixin clearfix;
 	overflow: hidden;
 	&--padding-top{
@@ -16,7 +17,14 @@
 		width:50%;
 		float:left;
 	}
-
+	&__medium-6--larger{
+		width:65%;
+		
+	}
+	&__medium-6--smaller{
+		width:35%;
+		
+	}
 	&__medium-4{
 		width:33.33%;
 		float:left;

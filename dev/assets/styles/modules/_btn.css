@@ -13,6 +13,7 @@
 	transition: all .3s ease-out;
 	margin-bottom:3px;
 	display:block;
+	cursor:pointer;
 
 	@mixin smallView{
 		margin: .5rem;
@@ -20,6 +21,11 @@
 		display: inline-block;
 		padding:18px 0;
 		width:200px;
+	}
+	&--submit{
+		background-color:$mainPurple;
+		color:#fff;
+		cursor:pointer;
 	}
 	&--primary{
 		background-color:$mainPurple;

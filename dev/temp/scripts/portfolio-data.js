@@ -1,49 +1,50 @@
 var projects =[{  
-      name:"AK - Personal Portfolio",
-      thumbnail:"assets/images/portfolio_01.jpg",
+      name:"Website Sample 1",
+      thumbnail:"assets/images/portfolio/portfolio_01.jpg",
       description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"assets/images/screenshot_01.jpg",
+      image:"assets/images/portfolio/screenshot_01.jpg",
+      liveLink:"",
+      category:"webdesign"
+   },
+
+   {  
+      name:"Website Sample 2",
+      thumbnail:"assets/images/portfolio/portfolio_02.jpg",
+      description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+      image:"assets/images/portfolio/screenshot_02.jpg",
       liveLink:"",
       category:"webdesign"
    },
    {  
-      name:"Name1",
-      thumbnail:"assets/images/portfolio_01.jpg",
+      name:"Graphic Sample 1",
+      thumbnail:"assets/images/portfolio/graphic_thumb.jpg",
       description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"",
-      liveLink:"www.google.com",
+      image:"assets/images/portfolio/graphic_01.jpeg",
+      liveLink:"",
+      category:"graphic"
+   },
+   {  
+      name:"Logo Sample 1",
+      thumbnail:"assets/images/portfolio/logo_thumb.jpg",
+      description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
+      image:"assets/images/portfolio/logo_01.jpeg",
+      liveLink:"",
       category:"logo"
    },
    {  
-      name:"wCreation",
-      thumbnail:"assets/images/portfolio_02.jpg",
+      name:"Graphic Sample 2",
+      thumbnail:"assets/images/portfolio/graphic_02_thumb.jpg",
       description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"",
+      image:"assets/images/portfolio/graphic_02.jpeg",
       liveLink:"",
-      category:"webdesign"
+      category:"graphic"
    },
    {  
-      name:"Name4",
-      thumbnail:"assets/images/portfolio_01.jpg",
+      name:"Graphic Sample 3",
+      thumbnail:"assets/images/portfolio/graphic_03_thumb.jpg",
       description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"",
+      image:"assets/images/portfolio/graphic_03.jpeg",
       liveLink:"",
-      category:"webdesign"
-   },
-   {  
-      name:"Name5",
-      thumbnail:"assets/images/portfolio_01.jpg",
-      description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"",
-      liveLink:"",
-      category:"webdesign"
-   },
-   {  
-      name:"Name6",
-      thumbnail:"assets/images/portfolio_01.jpg",
-      description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      image:"",
-      liveLink:"",
-      category:"webdesign"
+      category:"graphic"
    }
 ];

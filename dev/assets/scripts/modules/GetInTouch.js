@@ -24,7 +24,7 @@ class getInTouch{
 					_this.Hide();
 				}
 			},
-			offset:'-100%'
+			offset:'-'+ this.getInTouchContainer.outerHeight()
 			});
 	}
 	Show(){

@@ -1,9 +1,9 @@
 /* Gulp Sprites */
 		.icon{
-		background-image:url('../../assets/images/sprites/sprite-6af93f31.svg');
+		background-image:url('../../assets/images/sprites/sprite-81a2c7e5.svg');
 		}
 		.no-svg .icon{
-			background-image:url('../../assets/images/sprites/sprite-6af93f31.png');
+			background-image:url('../../assets/images/sprites/sprite-81a2c7e5.png');
 		}
 	.icon--art{
 		width:50px;
@@ -13,7 +13,7 @@
 	.icon--behance{
 		width:58.69px;
 		height:58.69px;
-		background-position: 58.93526861818713% 0;
+		background-position: 0 69.00373522748147%;
 	}
 	.icon--bug{
 		width:50px;
@@ -25,15 +25,20 @@
 		height:50px;
 		background-position: 83.96728971962617% 0;
 	}
+	.icon--down{
+		width:34px;
+		height:34px;
+		background-position: 99.86521739130434% 0;
+	}
 	.icon--facebook{
 		width:58.69px;
 		height:58.69px;
-		background-position: 0 69.00373522748147%;
+		background-position: 28.586040621499198% 69.00373522748147%;
 	}
 	.icon--gplus{
 		width:58.69px;
 		height:58.69px;
-		background-position: 28.586040621499198% 69.00373522748147%;
+		background-position: 57.172081242998395% 69.00373522748147%;
 	}
 	.icon--info{
 		width:50px;
@@ -43,7 +48,7 @@
 	.icon--instagram{
 		width:58.69px;
 		height:58.69px;
-		background-position: 57.172081242998395% 69.00373522748147%;
+		background-position: 0 33.065948196681155%;
 	}
 	.icon--logo{
 		width:121px;
@@ -58,7 +63,7 @@
 	.icon--more{
 		width:34px;
 		height:34px;
-		background-position: 99.86521739130434% 0;
+		background-position: 99.86521739130434% 18.085106382978722%;
 	}
 	.icon--star{
 		width:50px;
@@ -83,5 +88,5 @@
 	.icon--youtube{
 		width:58.69px;
 		height:58.69px;
-		background-position: 0 33.065948196681155%;
+		background-position: 58.93526861818713% 0;
 	}
