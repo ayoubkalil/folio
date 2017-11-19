@@ -11126,7 +11126,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //initializing typed title
 
 var typed = new _typed2.default('.hero__title strong', {
-  strings: ["Ayoub", "front end Dev", "Designer", "Creative"],
+  strings: ["Ayoub", "Full Stack Dev", "Designer", "Creative"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 750,

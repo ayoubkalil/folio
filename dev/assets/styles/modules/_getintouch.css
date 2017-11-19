@@ -20,15 +20,21 @@
 		text-align: left;
 	}
 	#hideMe{
+
 		display:block;
 		margin:10px auto;
 		width: 34px;
 		text-decoration: none;
 		line-height: 0;
+		height: 34px;
+		position: absolute;
+		bottom: -40px;
+		left: 50%;
 		animation-name: blinkit;
     	animation-duration: 1s;
     	animation-iteration-count:infinite;
     	animation-direction: alternate;
+
 		span{
 			display:block;
 		}

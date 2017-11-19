@@ -9,7 +9,7 @@ import portfolioGallery from "./modules/PortfolioGallery";
 //initializing typed title
 
 var typed = new Typed('.hero__title strong', {
-  strings: ["Ayoub","front end Dev" , "Designer" , "Creative"],
+  strings: ["Ayoub","Full Stack Dev" , "Designer" , "Creative"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 750,

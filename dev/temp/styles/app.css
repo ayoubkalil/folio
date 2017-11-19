@@ -1618,11 +1618,16 @@ a{
 	}
 
 .get-in-touch #hideMe{
+
 		display:block;
 		margin:10px auto;
 		width: 34px;
 		text-decoration: none;
 		line-height: 0;
+		height: 34px;
+		position: absolute;
+		bottom: -40px;
+		left: 50%;
 		-webkit-animation-name: blinkit;
 		        animation-name: blinkit;
     	-webkit-animation-duration: 1s;
