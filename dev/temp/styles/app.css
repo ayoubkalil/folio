@@ -971,65 +971,77 @@ a{
 /* Gulp Sprites */
 
 .icon{
-		background-image:url('../../assets/images/sprites/sprite-81a2c7e5.svg');
+		background-image:url('../../assets/images/sprites/sprite-3b1dd783.svg');
 		}
 
 .no-svg .icon{
-			background-image:url('../../assets/images/sprites/sprite-81a2c7e5.png');
+			background-image:url('../../assets/images/sprites/sprite-3b1dd783.png');
 		}
 
 .icon--art{
 		width:50px;
 		height:50px;
-		background-position: 70.09345794392523% 99.63953488372093%;
+		background-position: 99.74058577405857% 29.069767441860463%;
 	}
 
 .icon--behance{
 		width:58.69px;
 		height:58.69px;
-		background-position: 0 69.00373522748147%;
+		background-position: 78.02092831401156% 35.937787030800315%;
 	}
 
 .icon--bug{
 		width:50px;
 		height:50px;
-		background-position: 23.364485981308412% 99.63953488372093%;
+		background-position: 62.76150627615063% 99.63953488372093%;
 	}
 
 .icon--code{
 		width:50px;
 		height:50px;
-		background-position: 83.96728971962617% 0;
+		background-position: 50.62761506276151% 34.122093023255815%;
 	}
 
 .icon--down{
 		width:34px;
 		height:34px;
-		background-position: 99.86521739130434% 0;
+		background-position: 93.48235294117647% 53.191489361702125%;
 	}
 
 .icon--facebook{
 		width:58.69px;
 		height:58.69px;
-		background-position: 28.586040621499198% 69.00373522748147%;
+		background-position: 25.483044592071554% 69.00373522748147%;
+	}
+
+.icon--github{
+		width:58.69px;
+		height:58.69px;
+		background-position: 50.96608918414311% 69.00373522748147%;
 	}
 
 .icon--gplus{
 		width:58.69px;
 		height:58.69px;
-		background-position: 57.172081242998395% 69.00373522748147%;
+		background-position: 78.02092831401156% 0;
 	}
 
 .icon--info{
 		width:50px;
 		height:50px;
-		background-position: 56.54205607476636% 34.122093023255815%;
+		background-position: 75.18410041841004% 68.24418604651163%;
 	}
 
 .icon--instagram{
 		width:58.69px;
 		height:58.69px;
 		background-position: 0 33.065948196681155%;
+	}
+
+.icon--linkedin{
+		width:58.69px;
+		height:58.69px;
+		background-position: 0 69.00373522748147%;
 	}
 
 .icon--logo{
@@ -1041,43 +1053,43 @@ a{
 .icon--message{
 		width:50px;
 		height:50px;
-		background-position: 83.96728971962617% 29.069767441860463%;
+		background-position: 0 99.63953488372093%;
 	}
 
 .icon--more{
 		width:34px;
 		height:34px;
-		background-position: 99.86521739130434% 18.085106382978722%;
+		background-position: 93.48235294117647% 71.27659574468085%;
 	}
 
 .icon--star{
 		width:50px;
 		height:50px;
-		background-position: 83.96728971962617% 58.13953488372093%;
+		background-position: 20.92050209205021% 99.63953488372093%;
 	}
 
 .icon--suit{
 		width:50px;
 		height:50px;
-		background-position: 0 99.63953488372093%;
+		background-position: 41.84100418410042% 99.63953488372093%;
 	}
 
 .icon--twitter{
 		width:58.69px;
 		height:58.69px;
-		background-position: 28.586040621499198% 33.065948196681155%;
+		background-position: 25.483044592071554% 33.065948196681155%;
 	}
 
 .icon--wordpress{
 		width:50px;
 		height:50px;
-		background-position: 46.728971962616825% 99.63953488372093%;
+		background-position: 99.74058577405857% 0;
 	}
 
 .icon--youtube{
 		width:58.69px;
 		height:58.69px;
-		background-position: 58.93526861818713% 0;
+		background-position: 52.53788372193999% 0;
 	}
 
 .headline{
